@@ -1,4 +1,4 @@
-# rescue-faune
+# rescue-fauna
 
 This utility extracts the content from the [fauna-archive]() leaf files and generates json equivalents.
 
