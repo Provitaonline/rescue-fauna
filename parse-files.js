@@ -93,7 +93,11 @@ function collectTaxonomy(file) {
   if (!taxonomy[content.kingdom][content.phylum][content.class][content.order][content.family]) taxonomy[content.kingdom][content.phylum][content.class][content.order][content.family] = {}
   if (!taxonomy[content.kingdom][content.phylum][content.class][content.order][content.family][content.genus]) taxonomy[content.kingdom][content.phylum][content.class][content.order][content.family][content.genus] = {}
 
-  taxonomy[content.kingdom][content.phylum][content.class][content.order][content.family][content.genus][content.species] = file.split('/')[3].split('.')[0] + '.json'
+  taxonomy[content.kingdom][content.phylum][content.class][content.order][content.family][content.genus][content.species] = {
+    jsonFile: file.split('/')[3].split('.')[0] + '.json',
+    hasDescription: true,
+    risk: content.risk
+  }
 
 }
 
