@@ -96,7 +96,8 @@ function collectTaxonomy(file) {
   taxonomy[content.kingdom][content.phylum][content.class][content.order][content.family][content.genus][content.species] = {
     jsonFile: file.split('/')[3].split('.')[0] + '.json',
     hasDescription: true,
-    risk: content.risk
+    risk: content.risk,
+    commonName: content.commonName
   }
 
 }
